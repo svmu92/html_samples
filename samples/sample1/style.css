@@ -35,6 +35,21 @@ a {
 
 p {
   text-align: justify;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 10;
+  padding: 0;
+  color: black;
+  display:inline-flex;
+}
+
+.plain {
+  color: black;
+}
+
+.fancy {
+  color: green;
 }
 
 span {
@@ -70,6 +85,7 @@ nav ul {
   border-style: solid;
   padding: 0;
   font-size: 30px;
+  justify-content: space-evenly;
 }
 
 nav ul li {
@@ -84,4 +100,9 @@ nav ul li a:active {
 
 nav ul li a:focus {
   outline: 2px solid #f00;
+}
+
+nav ul li a:visited {
+  text-transform: capitalize;
+  background-color: lightblue;
 }
