@@ -104,10 +104,6 @@ h3 {
   text-decoration: underline;
 }
 
-div {
-  display: inline-block;
-}
-
 header {
   display: flex;
   justify-content: center; 
