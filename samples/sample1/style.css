@@ -1,96 +1,58 @@
-html {
-  height: 100%;
-  width: 100%;
-}
+/* CSS Document */
 
 body {
-  background-color: #dedede;
+  background-color: rgba(234, 12, 8, 0.796);
   font-family: 'Times New Roman', Times, serif;
-  margin: 100;
-  padding: 0;
-  height: 100%;
-  width: 100%;
 }
 
 h1 {
-  color: red;
+  color: rgb(184, 13, 13);
   text-align: center;
-}
-
-li {
-  color: blue;
+  font-size: 50px;
   font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-section img {
-  border: 5px solid black;
-  margin: 10px;
+.skiplink {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #f00;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skiplink:focus {
+  top:0;
+  outline: 2px solid #f00;
 }
 
 a {
-  color: green;
+  color: blue;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
-p {
-  text-align: justify;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 1.5;
-  margin: 10;
-  padding: 0;
-  color: black;
-  display:inline-flex;
-}
-
-.plain {
-  color: black;
-}
-
-.fancy {
-  color: green;
-}
-
-span {
-  background-color: red;
-}
-
-h3 {
-  text-decoration: underline;
-}
-
-.centered-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-}
-
-div {
-  display: inline-block;
-}
+/* Navigation */
 
 nav a {
   text-decoration: none;
   color: white;
-  background-color: red;
 }
 
 nav ul {
   list-style-type: none;
   display: flex;
-  border: green;
+  border: black;
   border-width: 1px;
   border-style: solid;
-  padding: 0;
   font-size: 30px;
   justify-content: space-evenly;
+  background-color: red;
+  opacity: 0.9;
 }
 
-nav ul li {
-  margin: 0 10px;
-}
 nav ul li a:hover {
   background-color: #555;
 }
@@ -101,8 +63,129 @@ nav ul li a:active {
 nav ul li a:focus {
   outline: 2px solid #f00;
 }
+/* End of Navigation */
 
-nav ul li a:visited {
-  text-transform: capitalize;
-  background-color: lightblue;
+a:focus {
+  outline: 2px solid #f00;
 }
+
+li {
+  color: blue;
+  font-weight: bold;
+}
+
+img {
+  justify-content: center;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  border: 5px solid black;
+  padding: 2px;
+  border-radius: 20px;
+}
+
+p {
+  text-align: justify;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 10px;
+  padding: 20px;
+  color: black;
+  display: flex;
+}
+
+span {
+  background-color: red;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+div {
+  display: inline-block;
+}
+
+header {
+  display: flex;
+  justify-content: center; 
+}
+
+.top {
+  background-color: #777;
+  background-image: url("images/118886268.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.top img {
+  display: flex;
+  width: 10%;
+  border: none;
+  padding: none;
+  margin: none;
+  border-radius: 0px;
+}
+
+.current {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 10px;
+  border: 2px hidden #000;
+}
+
+.other {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  padding: 10px;
+  border: 2px hidden #000;
+}
+
+footer p {
+  display: block;
+  margin: 0;
+}
+
+.inb {
+  display: flex;
+  margin: 0 auto;
+}
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.gallery img {
+  border-radius: 20px;
+  padding: 50px;
+  border: 5px solid black;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.gallery img:nth-child(3n) {
+  border-radius: 0px;
+  border-color: blue;
+}
+
+.gallery img:hover {
+  padding: 0px;
+  transform: scale(1.5);
+  transition-delay: 1s;
+  transition-duration: 0.5s;
+}
+
+/* End of Gallery */
